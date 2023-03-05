@@ -28,3 +28,5 @@ class LocalityDTO(BaseModel):
     locality: Optional[str] = Field(
         None, title="Местонахождение", min_length=2, max_length=255
     )
+    latitude: float = Field(title="Широта")
+    longitude: float = Field(title="Долгота")

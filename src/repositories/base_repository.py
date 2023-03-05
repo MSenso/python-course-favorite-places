@@ -77,7 +77,7 @@ class BaseRepository(ABC):
     async def find_all_by(
         self,
         *,
-        limit: int,
+        limit: Optional[int] = None,
         order_by: Optional[Any] = None,
         offset: Optional[int] = 0,
         **kwargs: Any,
